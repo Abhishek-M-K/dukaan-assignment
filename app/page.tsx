@@ -1,10 +1,12 @@
 import NavigationSidebar from "./navigation/page";
+import Panel from "./mainpanel/page";
 
 export default function Home() {
   return (
     <>
-      <div className="flex min-w-screen">
+      <div className="flex">
         <NavigationSidebar />
+        <Panel />
       </div>
     </>
   );
