@@ -3,7 +3,9 @@ import NavigationSidebar from "./navigation/page";
 export default function Home() {
   return (
     <>
-      <NavigationSidebar />
+      <div className="flex min-w-screen">
+        <NavigationSidebar />
+      </div>
     </>
   );
 }
