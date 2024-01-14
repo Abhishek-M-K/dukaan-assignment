@@ -2,11 +2,13 @@ const PanelHeader = () => {
   return (
     <>
       <header
-        className=" w-full h-[64px] flex gap-[16px] px-8 py-3 z-50  bg-white border-b border-black/15"
+        className="w-[1216px] h-[64px] flex gap-[16px] px-8 py-3 z-50  bg-white border-b border-black/15"
         role="banner"
       >
         <div className="flex items-center flex-1 gap-4 ">
-          <h1 className="text-[20px] font-medium text-[#1A181E]">Payments</h1>
+          <h1 className="text-base font-normal leading-6 text-[#1A181E]">
+            Payments
+          </h1>
           <div className="flex items-center gap-2 text-black/70">
             <img src="/images/dashboard-outlined-help.png" alt="question" />
             <span className="text-xs">How it works</span>
@@ -41,3 +43,4 @@ const PanelHeader = () => {
 };
 
 export default PanelHeader;
+//top-0 sticky

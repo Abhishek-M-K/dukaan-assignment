@@ -1,6 +1,6 @@
 const OrderTable = () => {
   return (
-    <div className="w-full h-10 rounded px-3 py-2.5 flex items-center bg-[#F2F2F2]">
+    <div className="w-[1128px] h-10 rounded px-3 py-2.5 flex items-center bg-[#F2F2F2]">
       <div className="w-[246px] h-5 flex items-start justify-center flex-col text-sm font-medium text-[#4D4D4D]">
         Order ID
       </div>

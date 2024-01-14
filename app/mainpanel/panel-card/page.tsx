@@ -26,17 +26,17 @@ const PanelCard = () => {
         <Cards title="Amount Received" amount="₹23,92,312.19" />
       </section>
 
-      <div className="gap-y-[32px] w-full" />
+      <div className="gap-y-[16px] w-full" />
       <p className="text-xl h-7 text-[#1A181E] font-medium">
         Transactions | This Month
       </p>
-      <p className="w-full gap-y-[20px]" />
+      <div className="w-full gap-x-[10px]" />
 
       <div
-        className="flex flex-col bg-white gap-[12px] pt-[12px] pb-[8px] px-[12px] rounded-md"
+        className="flex flex-col w-[1152px] bg-white gap-[12px] pt-[12px] pb-[8px] px-[12px] rounded-md"
         style={{ boxShadow: "0px 2px 6px 0px rgba(26, 24, 30, 0.04)" }}
       >
-        <section className="flex justify-between">
+        <section className="flex justify-between w-[1128px]">
           <div className="flex w-[248px] px-[16px] py-[10px] gap-[8px] items-center border rounded">
             <img
               src="/images/input-search.png"
@@ -69,32 +69,35 @@ const PanelCard = () => {
             </div>
           </div>
         </section>
-        {/* hjjdsh */}
-        <OrderTable />
-        {[...new Array(19)].map((_, index) => {
-          return (
-            <div
-              key={index}
-              className="w-[1128px] border-b-[1px] h-[48px] px-3 py-3.5 items-center bg-[#FFF] border-[#E6E6E6] flex"
-            >
-              <div className="w-[246px] h-5 flex items-start justify-center flex-col text-sm font-medium text-[#146EB4]">
-                #281209
+
+        <div className="w-[1128px]">
+          <OrderTable />
+          {[...new Array(19)].map((_, index) => {
+            return (
+              <div
+                key={index}
+                className="w-[1128px] border-b-[1px] h-[48px] px-3 py-3.5 items-center bg-[#FFF] border-[#E6E6E6] flex"
+              >
+                <div className="w-[246px] h-5 flex items-start justify-center flex-col text-sm font-medium text-[#146EB4]">
+                  #281209
+                </div>
+                <div className="w-10 h-full" />
+                <div className="w-[246px] h-5 flex items-start justify-center flex-col text-sm font-medium text-[#1A181E]">
+                  7 July, 2023
+                </div>
+                <div className="w-10 h-full" />
+                <div className="w-[246px] h-5 flex items-end justify-center flex-col text-sm font-medium text-[#1A181E]">
+                  ₹1,278.23
+                </div>
+                <div className="w-10 h-full" />
+                <div className="w-[246px] h-5 flex items-end justify-center flex-col text-sm font-medium text-[#1A181E]">
+                  ₹22
+                </div>
               </div>
-              <div className="w-10 h-full" />
-              <div className="w-[246px] h-5 flex items-start justify-center flex-col text-sm font-medium text-[#1A181E]">
-                7 July, 2023
-              </div>
-              <div className="w-10 h-full" />
-              <div className="w-[246px] h-5 flex items-end justify-center flex-col text-sm font-medium text-[#1A181E]">
-                ₹1,278.23
-              </div>
-              <div className="w-10 h-full" />
-              <div className="w-[246px] h-5 flex items-end justify-center flex-col text-sm font-medium text-[#1A181E]">
-                ₹22
-              </div>
-            </div>
-          );
-        })}
+            );
+          })}
+        </div>
+
         <div className="h-6 w-full" />
         <PanelPagination />
       </div>

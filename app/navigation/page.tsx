@@ -50,11 +50,11 @@ const sidebarItems: { title: string; icon: any }[] = [
     icon: "sidebar-plugins",
   },
 ];
-
+//min-h-screen max-h-screen
 const NavigationSidebar = () => {
   return (
     <>
-      <nav className=" bg-[#1E2640] w-[224px] min-h-screen max-h-screen sticky flex flex-col text-white gap-[6px] py-4 px-2.5">
+      <nav className=" bg-[#1E2640] w-[224px]  sticky flex flex-col text-white gap-[6px] py-4 px-2.5">
         <div className="w-[192px] h-[42px] flex">
           <div className="w-[39px] h-[39px] rounded">
             <img src="/images/profile.png" alt="profile" />
@@ -103,10 +103,7 @@ const NavigationSidebar = () => {
         </div>
         <div className="w-full h-[16px]" />
 
-        <div
-          className="py-1.5 px-3 bg-[#353C53] rounded flex items-center space-x-3"
-          aria-label="Credits"
-        >
+        <div className="px-[12px] py-[6px] bg-[#353C53] rounded flex items-center -mb-1 gap-x-[12px]">
           <div className="p-1.5 bg-white/10 rounded h-fit" aria-hidden="true">
             <img src="/images/sidebar-wallet.png" alt="wallet" />
           </div>
